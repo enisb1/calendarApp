@@ -1,0 +1,32 @@
+#myTitle {
+    text-align: center;
+    color: #f7fff7;
+}
+
+body {
+    background-color: #343434;
+}
+
+main {
+    margin: auto;
+}
+
+.parent {
+    background-color: #2f3061;
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.child {
+    flex: 1;
+}
+
+#calendarBox {
+    margin-left: 10%;
+}
+
+
+
+
+
