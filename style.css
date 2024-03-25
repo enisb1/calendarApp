@@ -14,7 +14,6 @@ main {
 }
 
 .parent {
-    background-color: #2f3061;
     display: flex;
     width: 70%;
     margin: auto;
@@ -23,16 +22,26 @@ main {
 .child {
     flex: 1;
     border: 1px solid white;
+    border-radius: 3ch;
+    background-color: #2f3061;
+}
+
+#descriptionBox {
+    padding: 2ch;
 }
 
 #calendarBox {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
+}
+
+#daysGrid {
+    font-weight: bold;
 }
 
 #calendarTitle {
@@ -45,7 +54,7 @@ main {
     grid-column: 5;
 }
 
-button {
+.grid button {
     width: 100%;
     height: 5ch;
     margin: auto;
@@ -55,12 +64,13 @@ button {
     color: #f7fff7;
 }
 
-button:hover {
+.grid button:hover {
     border: 2px solid white;
 }
 
-#daysGrid {
-    font-weight: bold;
+.grid button:focus {
+    background-color: white;
+    color: black;
 }
 
 
