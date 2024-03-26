@@ -16,7 +16,7 @@ main {
 
 .parent {
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 8ch;
 }
@@ -38,7 +38,33 @@ main {
     margin-left: 5%;
 }
 
-.grid {
+.calendarTitleGrid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.calendarTitleElement {
+    text-align: center;
+}
+
+.calendarTitleGrid button {
+    background-color: transparent;
+    border: 0;
+    font-size: large;
+    font-weight: bold;
+    color: #f7fff7;
+    border-radius: 50%;
+}
+
+.calendarTitleGrid button:active {
+    background-color: #f7fff7;
+    color: #282727;
+}
+
+.calendarGrid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
@@ -48,18 +74,15 @@ main {
     font-weight: bold;
 }
 
-#calendarTitle {
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 2%;
-    font-weight: bold;
+#calendarHeader {
+    min-width: 100%;
 }
 
 #firstNumber {
     grid-column: 5;
 }
 
-.grid button {
+.calendarGrid button {
     width: 100%;
     height: 5ch;
     margin: auto;
@@ -69,18 +92,20 @@ main {
     color: #f7fff7;
 }
 
-.grid button:hover {
+.calendarGrid button:hover {
     border: 1px solid #f7fff7;
 }
 
-.grid button:focus {
+.calendarGrid button:focus,
+.calendarGrid button:active {
     background-color: #f7fff7;
     color: black;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:800px) {
     .parent {
         flex-direction: column;
+        width: 100%;
     }
 }
 

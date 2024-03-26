@@ -10,7 +10,6 @@
     <h1 id="docTitle">Calendar</h1>
     
     <div class="parent">
-        
         <div id="descriptionBox" class="child">
             <div>Il calendario qui a destra è stato realizzato usando il sistema Grid di CSS. Al contrario, l'allineamento dell'header e dei due main è stato realizzato usando le proprietà Flex.</p>
                 <ul>
@@ -21,9 +20,13 @@
         </div>
     
         <div id="calendarBox" class="child">
-            <div id="calendarTitle"><time datetime="2024-03">March 2024</time></div>
-            
-            <div id="daysGrid" class="grid">
+            <div id="calendarHeader" class="calendarTitleGrid">
+                <div id="previousMonthArrow" class="calendarTitleElement"><button>&#8592</button></div>
+                <div id="calendarTitle" class="calendarTitleElement"><time datetime="2024-03">March 2024</time></div>
+                <div id="nextMonthArrow" class="calendarTitleElement"><button>&#8594</button></div>
+            </div>
+
+            <div id="daysGrid" class="calendarGrid">
                 <div>Mo</div>
                 <div>Tu</div>
                 <div>We</div>
@@ -35,7 +38,7 @@
 
             <hr>
             
-            <div id="numbersGrid" class="grid">
+            <div id="numbersGrid" class="calendarGrid">
                 <button id="firstNumber"><time datetime="2024-03-01">1</time></button>
                 <button><time datetime="2024-03-02">2</time></button>
                 <button><time datetime="2024-03-03">3</time></button>
@@ -68,7 +71,6 @@
                 <button><time datetime="2024-03-30">30</time></button>
                 <button><time datetime="2024-03-31">31</time></button>
             </div>
-        
         </div>
     </div>
 
