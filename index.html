@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar App</title>
+    <title>Calendar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="docTitle">Calendar App</h1>
+    <h1 id="docTitle">Calendar</h1>
     
     <div class="parent">
         
         <div id="descriptionBox" class="child">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nisi repellat mollitia omnis soluta? Veritatis, ea architecto. Neque aperiam debitis ullam illo nulla fuga ipsam, ratione quaerat laboriosam laborum commodi.</div>
+            <div>Il calendario qui a destra è stato realizzato usando il sistema Grid di CSS. Al contrario, l'allineamento dell'header e dei due main è stato realizzato usando le proprietà Flex.</p>
+                <ul>
+                  <li>La pseudo-class <b>:hover</b> consente di modificare dello stile quando si passa il mouse sulle date.</li> 
+                  <li>La pseudo-class <b>:focus</b> consente di modificare lo stile quando si clicca su un elemento come un input o un bottone.</li>
+                  <li>La pseudo-class <b>:active</b> serve per dare feedback all'utente che un elemento ha ricevuto un evento come un click.</li>
+                </ul></div>
         </div>
     
         <div id="calendarBox" class="child">
@@ -30,8 +35,8 @@
 
             <hr>
             
-            <div class="grid">
-                <button id="firstChild"><time datetime="2024-03-01">1</time></button>
+            <div id="numbersGrid" class="grid">
+                <button id="firstNumber"><time datetime="2024-03-01">1</time></button>
                 <button><time datetime="2024-03-02">2</time></button>
                 <button><time datetime="2024-03-03">3</time></button>
                 <button><time datetime="2024-03-04">4</time></button>

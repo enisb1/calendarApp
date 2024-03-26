@@ -4,9 +4,10 @@
 }
 
 body {
-    background-color: #343434;
+    background-color: #282727;
     color: #f7fff7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
 }
 
 main {
@@ -17,13 +18,16 @@ main {
     display: flex;
     width: 70%;
     margin: auto;
+    margin-top: 8ch;
 }
 
 .child {
     flex: 1;
-    border: 1px solid white;
+    border: 1px solid #f7fff7;
+    background-color: #1d4165;
     border-radius: 3ch;
-    background-color: #2f3061;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 #descriptionBox {
@@ -47,10 +51,11 @@ main {
 #calendarTitle {
     text-align: center;
     margin-bottom: 5%;
+    margin-top: 2%;
     font-weight: bold;
 }
 
-#firstChild {
+#firstNumber {
     grid-column: 5;
 }
 
@@ -65,14 +70,17 @@ main {
 }
 
 .grid button:hover {
-    border: 2px solid white;
+    border: 1px solid #f7fff7;
 }
 
 .grid button:focus {
-    background-color: white;
+    background-color: #f7fff7;
     color: black;
 }
 
-
-
+@media screen and (max-width:750px) {
+    .parent {
+        flex-direction: column;
+    }
+}
 
