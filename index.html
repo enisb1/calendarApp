@@ -11,19 +11,24 @@
     
     <div class="parent">
         <div id="descriptionBox" class="child">
-            <div>Il calendario qui a destra è stato realizzato usando il sistema Grid di CSS. Al contrario, l'allineamento dell'header e dei due main è stato realizzato usando le proprietà Flex.</p>
+            <div>
+                <p>Come è stato realizzato il documento in questione:</p>
                 <ul>
-                  <li>La pseudo-class <b>:hover</b> consente di modificare dello stile quando si passa il mouse sulle date.</li> 
-                  <li>La pseudo-class <b>:focus</b> consente di modificare lo stile quando si clicca su un elemento come un input o un bottone.</li>
-                  <li>La pseudo-class <b>:active</b> serve per dare feedback all'utente che un elemento ha ricevuto un evento come un click.</li>
-                </ul></div>
+                  <li>Il layout costituito da queste due box è stato implementato tramite <b>flex</b>, questo consente alle due box di assumere la stessa grandezza e restringersi ugualmente </li> 
+                  <li>Ho usato una <b>media query</b> per modificare il layout quando la larghezza del dispositivo è troppo piccola, in modo da avere le box impilate una sopra l'altra e garantire più spazio</li>
+                  <li>La calendar box è stata realizzata tramite 3 <b>grid</b></li>
+                  <li>Ho usato <b>hover</b> per modificare lo stile dei bottoni delle date quando si passa il mouse su di esse</li>
+                  <li>Ho usato <b>focus</b> e <b>active</b> per modificare lo stile dei bottoni delle date quando questi vengono cliccati</li>
+                  <li>Ho inserito dei bottoni in cima alla calendar box che con javascript verranno poi usati per andare al mese successivo o precedente del calendario</li>
+                </ul>
+            </div>
         </div>
     
         <div id="calendarBox" class="child">
-            <div id="calendarHeader" class="calendarTitleGrid">
-                <div id="previousMonthArrow" class="calendarTitleElement"><button>&#8592</button></div>
-                <div id="calendarTitle" class="calendarTitleElement"><time datetime="2024-03">March 2024</time></div>
-                <div id="nextMonthArrow" class="calendarTitleElement"><button>&#8594</button></div>
+            <div id="calendarHeader" class="calendarHeaderGrid">
+                <div id="previousMonthArrow" class="calendarHeaderElement"><button>&#8592</button></div>
+                <div id="calendarTitle" class="calendarHeaderElement"><time datetime="2024-03">March 2024</time></div>
+                <div id="nextMonthArrow" class="calendarHeaderElement"><button>&#8594</button></div>
             </div>
 
             <div id="daysGrid" class="calendarGrid">
