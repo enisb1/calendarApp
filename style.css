@@ -10,15 +10,15 @@ body {
     font-weight: 500;
 }
 
-main {
-    margin: auto;
+#descriptionTitle {
+    margin-left: 1ch;
 }
 
 .parent {
     display: flex;
     width: 80%;
     margin: auto;
-    margin-top: 8ch;
+    margin-top: 10ch;
 }
 
 .child {
@@ -30,10 +30,6 @@ main {
     flex-wrap: wrap;
 }
 
-#descriptionBox {
-    padding: 1ch;
-}
-
 #calendarBox {
     margin-left: 5%;
 }
@@ -41,7 +37,7 @@ main {
 .calendarHeaderGrid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     margin-top: 2%;
     font-weight: bold;
 }
@@ -108,5 +104,7 @@ main {
         width: 100%;
     }
 
+    #calendarBox {
+        margin-left: 0;
+    }
 }
-
